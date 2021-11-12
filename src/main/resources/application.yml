@@ -1,0 +1,20 @@
+server:
+  port: 8991
+  tomcat:
+    uri-encoding: UTF-8
+    max-connections: 2000
+    max-threads: 2000
+  # 超时时间
+  connection-timeout: 30000
+  servlet:
+    session:
+      cookie:
+        secure: true
+        http-only: true
+      persistent: false
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: sc-api-document

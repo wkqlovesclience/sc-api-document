@@ -1,0 +1,13 @@
+# nacos 配置 （nacos config必须配置在bootstrap）
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 139.9.73.236:8848
+        namespace: sc-api-wangkeqiang
+        metadata:
+          {"checkSum": "${random.value}-${random.uuid}"}
+      config:
+        server-addr: 139.9.73.236:8848
+        namespace: sc-api-wangkeqiang
+        file-extension: yaml
